@@ -42,7 +42,7 @@ export default function App() {
         return (
             <Router >
                 <Routes>
-                    <Route index path="/" Component={LoginForm} />
+                    <Route path="/" Component={LoginForm} />
                     <Route path="/register" Component={RegisterForm} />
                     <Route path="/forgot-password" Component={ForgotPasswordForm} />
                     <Route path="/group-foundation" Component={GroupFoundationForm} />
