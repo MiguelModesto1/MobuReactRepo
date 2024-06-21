@@ -8,7 +8,7 @@ import Error404Page from '../pages/Error404Page';
 import MessagesPage from '../pages/MessagesPage';
 import GroupProfilePage from '../pages/GroupProfilePage';
 import PersonProfilePage from '../pages/PersonProfilePage';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Route, Routes } from 'react-router-dom';
 import SearchPage from '../pages/SearchPage';
 //import {HubConnectionBuilder} from "@microsoft/signalr";
 import Error500Page from '../pages/Error500Page';
@@ -40,7 +40,7 @@ export default function App() {
     try {
 
         return (
-            <Router >
+            < >
                 <Routes>
                     <Route path="/" Component={LoginForm} />
                     <Route path="/register" Component={RegisterForm} />
@@ -63,7 +63,7 @@ export default function App() {
 
                     <Route path="/authors" Component={AuthorsPage} />
                 </Routes>
-            </ Router>
+            </ >
         );
     } catch (e) {
         e.console.log(e.message);
